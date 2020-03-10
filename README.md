@@ -13,8 +13,6 @@
 
 ##### Damsel Utils
 
-Версия не обновляется с остальными модулями
-
 1. [damsel-utils](damsel-utils/README.md)
 
 
