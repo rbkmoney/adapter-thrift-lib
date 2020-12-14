@@ -30,6 +30,7 @@ public class WithdrawalsProviderAdapterPackageCreators {
         return new ProcessResult(intent).setNextState(nextState).setTrx(transactionInfo);
     }
 
+    @Deprecated
     public static ProcessResult createProcessResult(Intent intent) {
         return WithdrawalsProviderAdapterPackageCreators.createProcessResult(intent, null, null);
     }
@@ -43,10 +44,12 @@ public class WithdrawalsProviderAdapterPackageCreators {
     }
 
     // FinishIntent
+    @Deprecated
     public static Intent createFinishIntentSuccess(TransactionInfo transactionInfo) {
         return Intent.finish(new FinishIntent(createFinishStatusSuccess(transactionInfo)));
     }
 
+    @Deprecated
     public static FinishStatus createFinishStatusSuccess(TransactionInfo transactionInfo) {
         Success success = new com.rbkmoney.damsel.withdrawals.provider_adapter.Success();
         success.setTrxInfo(transactionInfo);
@@ -61,6 +64,7 @@ public class WithdrawalsProviderAdapterPackageCreators {
         return Intent.finish(new FinishIntent(createFinishStatusFailure(failure)));
     }
 
+    @Deprecated
     public static ProcessResult createProcessResultFailure(Failure failure) {
         return createProcessResult(createFinishIntentFailure(failure));
     }
