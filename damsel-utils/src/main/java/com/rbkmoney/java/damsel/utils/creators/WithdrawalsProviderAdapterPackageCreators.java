@@ -30,7 +30,6 @@ public class WithdrawalsProviderAdapterPackageCreators {
         return new ProcessResult(intent).setNextState(nextState).setTrx(transactionInfo);
     }
 
-    @Deprecated
     public static ProcessResult createProcessResult(Intent intent) {
         return WithdrawalsProviderAdapterPackageCreators.createProcessResult(intent, null, null);
     }
@@ -64,7 +63,6 @@ public class WithdrawalsProviderAdapterPackageCreators {
         return Intent.finish(new FinishIntent(createFinishStatusFailure(failure)));
     }
 
-    @Deprecated
     public static ProcessResult createProcessResultFailure(Failure failure) {
         return createProcessResult(createFinishIntentFailure(failure));
     }
