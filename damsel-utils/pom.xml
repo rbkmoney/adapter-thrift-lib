@@ -13,7 +13,7 @@
 
     <properties>
         <damsel.version>1.466-060478e</damsel.version>
-        <jackson-databind.version>2.9.10.5</jackson-databind.version>
+        <jackson-databind.version>2.9.10.8</jackson-databind.version>
     </properties>
 
     <artifactId>damsel-utils</artifactId>
